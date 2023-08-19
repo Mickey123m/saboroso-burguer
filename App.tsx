@@ -1,7 +1,13 @@
-import Home from "./src/screens/Home"
+import React from 'react';
+import { SafeAreaView, } from 'react-native';
+import Home from './src/screens/Home';
 
-export default function App(){
+const App = () => {
   return (
-    <Home></Home>
+    <SafeAreaView style={{flex: 1}}>
+      <Home></Home>
+    </SafeAreaView>
   )
 };
+
+export default App

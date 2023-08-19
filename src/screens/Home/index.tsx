@@ -1,8 +1,13 @@
 import { Text, View } from "react-native"
-import { styles } from "./styles"
 import { Hamburguers } from "../../components/Hamburguers"
+import { styles } from "./styles"
 
 export default function Home(){
+
+  const printButtonLabel = (item) => {
+    console.log(item)
+  }
+
   return (
     <View style={styles.container}>
       <Text style={styles.headerWelcome}>
@@ -13,7 +18,10 @@ export default function Home(){
         Saboroso Burguer
       </Text>
 
-      <Hamburguers/>
+      <Hamburguers
+        buttons={["DESTAQUES", "CARDÁPIO"]}
+        doSomethingAfterClick={printButtonLabel}
+      />
     </View>
   )
 };

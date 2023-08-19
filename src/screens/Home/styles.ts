@@ -8,6 +8,7 @@ export const styles = StyleSheet.create({
     },
   
     headerWelcome: {
+      fontFamily: "",
       color: "white",
       fontSize: 30,
       marginTop: 50,
