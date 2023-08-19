@@ -3,36 +3,34 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     container: {
         flexDirection: "row",
-        marginTop: 20,
         justifyContent: "space-around",
+        marginTop: 30,
     },
 
-    buttom1: {
-        width: "40%",
-        backgroundColor: "#EDD925",
+    button: {
+        width: "30%",
         height: 50,
         alignItems: "center",
         justifyContent: "center",
-        borderRadius: 10,
-        marginLeft: 10
-    },
-
-    buttom2: {
-        width: "40%",
-        backgroundColor: "#232222",
-        height: 50,
-        alignItems: "center",
-        justifyContent: "center",
-        borderRadius: 10,
-        marginLeft: 10,
         borderWidth: 2,
+        borderColor: "#5A5858"
     },
 
-    textButton1: {
-        color: "#000000"
+    buttonActive: {
+        width: "30%",
+        height: 50,
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: "#EDD925",
+        borderWidth: 2,
+        borderColor: "black",
     },
 
-    textButton2: {
-        color: "#ffffff"
+    text: {
+        color: "#EDD925"
+    },
+
+    textActive: {
+        color: "black"
     }
-});
+})
